@@ -1,0 +1,29 @@
+# Compiled files
+*.class
+*.pyc
+*.pyo
+__pycache__/
+*.o
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+dist/
+target/
+bin/
+
+# Student output files (should be generated fresh)
+output/
+results/
+*.out

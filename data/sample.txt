@@ -1,0 +1,16 @@
+This is a sample text file for Lab 8.
+It contains multiple lines of text data.
+
+Students are expected to:
+- Read this file line by line
+- Count the number of lines
+- Count the number of words
+- Find the longest word
+- Calculate average word length
+
+Additional data for processing:
+The quick brown fox jumps over the lazy dog.
+Programming is both an art and a science.
+Data structures are fundamental to computer science.
+
+End of sample file.

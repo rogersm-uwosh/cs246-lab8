@@ -1,0 +1,69 @@
+{
+  "courses": [
+    {
+      "course_id": "CS246",
+      "course_name": "Software Engineering",
+      "instructor": "Dr. Rogers",
+      "credits": 3,
+      "capacity": 30,
+      "enrolled": 25,
+      "schedule": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "time": "10:00-10:50",
+        "room": "Halsey 201"
+      }
+    },
+    {
+      "course_id": "CS145",
+      "course_name": "Data Structures",
+      "instructor": "Prof. Anderson",
+      "credits": 4,
+      "capacity": 35,
+      "enrolled": 32,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "13:00-14:50",
+        "room": "Swart 138"
+      }
+    },
+    {
+      "course_id": "CS251",
+      "course_name": "Database Systems",
+      "instructor": "Dr. Martinez",
+      "credits": 3,
+      "capacity": 25,
+      "enrolled": 20,
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "14:00-15:15",
+        "room": "Halsey 304"
+      }
+    },
+    {
+      "course_id": "CS341",
+      "course_name": "Operating Systems",
+      "instructor": "Prof. Chen",
+      "credits": 4,
+      "capacity": 30,
+      "enrolled": 28,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "10:00-11:50",
+        "room": "Swart 245"
+      }
+    },
+    {
+      "course_id": "CS456",
+      "course_name": "Software Testing",
+      "instructor": "Dr. Rogers",
+      "credits": 3,
+      "capacity": 20,
+      "enrolled": 18,
+      "schedule": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "time": "13:00-13:50",
+        "room": "Halsey 201"
+      }
+    }
+  ]
+}

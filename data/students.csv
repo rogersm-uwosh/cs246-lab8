@@ -1,0 +1,11 @@
+student_id,first_name,last_name,email,major,year
+1001,Alice,Johnson,alice.johnson@uwosh.edu,Computer Science,3
+1002,Bob,Smith,bob.smith@uwosh.edu,Information Systems,2
+1003,Carol,Davis,carol.davis@uwosh.edu,Computer Science,4
+1004,David,Wilson,david.wilson@uwosh.edu,Software Engineering,3
+1005,Emma,Brown,emma.brown@uwosh.edu,Computer Science,2
+1006,Frank,Taylor,frank.taylor@uwosh.edu,Information Systems,4
+1007,Grace,Martinez,grace.martinez@uwosh.edu,Computer Science,1
+1008,Henry,Anderson,henry.anderson@uwosh.edu,Software Engineering,3
+1009,Ivy,Thomas,ivy.thomas@uwosh.edu,Computer Science,2
+1010,Jack,Moore,jack.moore@uwosh.edu,Information Systems,4
