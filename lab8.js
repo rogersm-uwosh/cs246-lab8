@@ -1,27 +1,52 @@
-import pg from 'pg';    // package for executing SQL from JS
+/**
+Name:
+Date:
+Description:
+Bugs: Write none known if you don't know of any
+Reflection: Describe the steps you took to write this, and the problems you encountered along the way. 
+            Include any LLM usage (but be sure and review the syllabus section specifying where LLMs can and cannot be used)
+*/
+
+import pg from 'pg';    // package for executing SQL in JavaScript
 import dotenv from 'dotenv'; // to manage environment variables
 dotenv.config();
 
 const mySecret = process.env['CockroachDBPassword']; // reads from .env file at root 
 
 const pool = new pg.Pool({
-    user: 'grace_hopper', 
-    host: 'stormy-ocelot-12775.5xj.cockroachlabs.cloud',
-    database: 'painters', // public database 
-    password: mySecret, 
+    user: 'YOUR_USER',
+    host: 'your_cluster.cockroachlabs.cloud',
+    database: 'your_database_name',
+    password: mySecret,
     port: 26257,
     ssl: true,
 });
-pool.connect();
 
-// async means this function will execute asynchronously
-async function demoSelect()  {
-    let results = await pool.query('SELECT * FROM painters'); 
-    let painters = results.rows; // each row corresponds to one painter
-    for(let painter of painters){
-        console.log(`${painter.first_name} ${painter.last_name}`);
+
+/**
+ * This illustrates the basic syntax for making a query, in this case, selecting
+ * all movies in the table
+ *
+ * @async
+ * @function demoSelect
+ * @returns {Promise<void>} Asynchronous functions return Promises — in this case, a void one.
+ */
+async function demoSelect() {
+    try {
+        let results = await pool.query('SELECT * FROM movies');
+        let movies = results.rows; // each row corresponds to one movie
+        for (let movie of movies) {
+            // do something spectacular here
+        }
+    } catch (error) {
+        console.log(`An error has occurred while selecting: ${error}`);
     }
-    console.log(JSON.stringify(results.rows)); // just to show you what rows looks like
 }
 
-await demoSelect();
+// While this needn't be called main(), it's as good a name as any.
+
+async function main() {
+    await demoSelect(); // Since we are awaiting demoSelect(), we must mark main() as async
+}
+
+main();
